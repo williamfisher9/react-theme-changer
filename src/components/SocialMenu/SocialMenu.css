@@ -1,0 +1,34 @@
+.social-menu-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    transform: translateY(-50%);
+
+    backdrop-filter: blur(17px);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+}
+
+.social-menu {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon {
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: scale 0.3s;
+}
+
+.icon:hover {
+    color: yellow;
+    scale: 1.2;
+}

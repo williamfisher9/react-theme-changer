@@ -1,0 +1,126 @@
+.left-menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 100%;
+    
+    backdrop-filter: blur(17px);
+    transition: width 0.3s;
+}
+
+.left-menu-container:hover {
+    width: 175px;
+
+    .logo-container {
+        flex-direction: row;
+    }
+    
+    .icon-desc {
+        display: block;
+    }
+
+    .inner-icon-container {
+        padding-left: 10px;
+        justify-content: start;
+    }
+}
+
+.logo-container {
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.logo-img {
+    width: 70px;
+    height: 30px;
+    background: url("../../assets/icon_latest.svg") center/contain no-repeat;
+}
+
+.logo-title {
+    width: 70px;
+    height: 25px;
+    background: url("../../assets/title_latest.svg") center/contain no-repeat;
+}
+
+.submenus {
+    height: calc(100svh - 100px);
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.top-submenu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.icon-desc {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    display: none;
+}
+
+
+.bottom-submenu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-container {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0;
+    gap: 3px;
+    overflow: hidden;
+}
+
+.inner-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%;
+    gap: 3px;
+    overflow: hidden;
+}
+
+
+.icon-container:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .inner-icon-container {
+        scale: 1.1;
+    }
+    .icon {
+        
+        color: yellow;
+    }
+
+    .icon-desc {
+        color: yellow;
+    }
+}
