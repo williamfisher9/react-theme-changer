@@ -39,13 +39,17 @@
 .logo-img {
     width: 70px;
     height: 30px;
-    background: url("../../assets/icon_latest.svg") center/contain no-repeat;
+
+    svg {
+        .background {
+            opacity: 0;
+          }
+    }
 }
 
 .logo-title {
     width: 70px;
     height: 25px;
-    background: url("../../assets/title_latest.svg") center/contain no-repeat;
 }
 
 .submenus {
@@ -122,5 +126,26 @@
 
     .icon-desc {
         color: yellow;
+    }
+}
+
+
+.logo-img-light {
+    svg {
+        path {
+            fill: #000;
+        }
+    }
+}
+
+.logo-title-light {
+    svg {
+        path {
+            fill: #000;
+        }
+
+        .business-name {
+            fill: #fff;
+        }
     }
 }

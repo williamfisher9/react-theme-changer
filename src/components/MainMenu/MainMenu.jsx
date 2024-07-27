@@ -2,14 +2,22 @@ import { useContext } from "react";
 import "./MainMenu.css";
 import { ThemeContext } from "../../App";
 
+import LogoIcon from "../LogoIcon";
+
+import LogoTitle from '../LogoTitle'
+
 function MainMenu() {
   const {theme} = useContext(ThemeContext);
 
   return (
-    <div className="left-menu-container" style={{backgroundColor: theme === 'dark' ? "rgba(0, 0, 0, 0.1)" : "#66bfbf"}}>
+    <div className="left-menu-container" style={{backgroundColor:  theme.type === 'dark' ? theme.dark.menuColor : theme.light.menuColor}}>
       <div className="logo-container">
-        <div className="logo-img"></div>
-        <div className="logo-title"></div>
+        <div className={theme.type === 'dark' ? 'logo-img logo-img-dark' : 'logo-img logo-img-light'}>
+          <LogoIcon />
+        </div>
+        <div  className={theme.type === 'dark' ? 'logo-title' : 'logo-title logo-title-light'}>
+          <LogoTitle />
+        </div>
       </div>
 
       <div className="submenus">
