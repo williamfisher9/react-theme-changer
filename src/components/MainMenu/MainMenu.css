@@ -71,19 +71,24 @@
 }
 
 .icon {
-    color: #fff;
     font-size: 2rem;
     font-weight: 300;
 }
 
 .icon-desc {
-    color: #fff;
     font-size: 1.3rem;
     font-weight: 200;
     text-transform: uppercase;
     display: none;
 }
 
+.icon-light, .icon-desc-light {
+    color: #000;
+}
+
+.icon-dark, .icon-desc-dark {
+    color: #fff;
+}
 
 .bottom-submenu {
     width: 100%;

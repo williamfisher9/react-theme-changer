@@ -24,50 +24,50 @@ function MainMenu() {
         <div className="top-submenu">
           <div className="icon-container">
             <div className="inner-icon-container">
-              <span className="icon material-symbols-outlined">home</span>
-              <span className="icon-desc">home</span>
+              <span className={theme.type === 'dark' ? 'icon icon-dark material-symbols-outlined' : 'icon material-symbols-outlined icon-light'}>home</span>
+              <span className={theme.type === 'dark' ? 'icon-desc icon-desc-dark' : 'icon-desc icon-desc-light'}>home</span>
             </div>
           </div>
 
           <div className="icon-container">
             <div className="inner-icon-container">
-              <span className="icon material-symbols-outlined">apps</span>
-              <span className="icon-desc">apps</span>
+            <span className={theme.type === 'dark' ? 'icon icon-dark material-symbols-outlined' : 'icon material-symbols-outlined icon-light'}>apps</span>
+            <span className={theme.type === 'dark' ? 'icon-desc icon-desc-dark' : 'icon-desc icon-desc-light'}>apps</span>
             </div>
           </div>
 
           <div className="icon-container">
             <div className="inner-icon-container">
-              <span className="icon material-symbols-outlined">token</span>
-              <span className="icon-desc">token</span>
+            <span className={theme.type === 'dark' ? 'icon icon-dark material-symbols-outlined' : 'icon material-symbols-outlined icon-light'}>token</span>
+            <span className={theme.type === 'dark' ? 'icon-desc icon-desc-dark' : 'icon-desc icon-desc-light'}>token</span>
             </div>
           </div>
 
           <div className="icon-container">
             <div className="inner-icon-container">
-              <span className="icon material-symbols-outlined">extension</span>
-              <span className="icon-desc">plugins</span>
+            <span className={theme.type === 'dark' ? 'icon icon-dark material-symbols-outlined' : 'icon material-symbols-outlined icon-light'}>extension</span>
+            <span className={theme.type === 'dark' ? 'icon-desc icon-desc-dark' : 'icon-desc icon-desc-light'}>plugins</span>
             </div>
           </div>
 
           <div className="icon-container">
             <div className="inner-icon-container">
-              <span className="icon material-symbols-outlined">group</span>
-              <span className="icon-desc">groups</span>
+            <span className={theme.type === 'dark' ? 'icon icon-dark material-symbols-outlined' : 'icon material-symbols-outlined icon-light'}>group</span>
+            <span className={theme.type === 'dark' ? 'icon-desc icon-desc-dark' : 'icon-desc icon-desc-light'}>groups</span>
             </div>
           </div>
 
           <div className="icon-container">
             <div className="inner-icon-container">
-              <span className="icon material-symbols-outlined">cookie</span>
-              <span className="icon-desc">cookies</span>
+            <span className={theme.type === 'dark' ? 'icon icon-dark material-symbols-outlined' : 'icon material-symbols-outlined icon-light'}>cookie</span>
+            <span className={theme.type === 'dark' ? 'icon-desc icon-desc-dark' : 'icon-desc icon-desc-light'}>cookies</span>
             </div>
           </div>
 
           <div className="icon-container">
             <div className="inner-icon-container">
-              <span className="icon material-symbols-outlined">new_releases</span>
-              <span className="icon-desc">releases</span>
+            <span className={theme.type === 'dark' ? 'icon icon-dark material-symbols-outlined' : 'icon material-symbols-outlined icon-light'}>new_releases</span>
+            <span className={theme.type === 'dark' ? 'icon-desc icon-desc-dark' : 'icon-desc icon-desc-light'}>releases</span>
             </div>
           </div>
         </div>
@@ -75,14 +75,14 @@ function MainMenu() {
         <div className="bottom-submenu">
           <div className="icon-container">
             <div className="inner-icon-container">
-              <span className="icon material-symbols-outlined">settings</span>
-              <span className="icon-desc">settings</span>
+            <span className={theme.type === 'dark' ? 'icon icon-dark material-symbols-outlined' : 'icon material-symbols-outlined icon-light'}>settings</span>
+            <span className={theme.type === 'dark' ? 'icon-desc icon-desc-dark' : 'icon-desc icon-desc-light'}>settings</span>
             </div>
           </div>
           <div className="icon-container">
             <div className="inner-icon-container">
-              <span className="icon material-symbols-outlined">logout</span>
-              <span className="icon-desc">logout</span>
+            <span className={theme.type === 'dark' ? 'icon icon-dark material-symbols-outlined' : 'icon material-symbols-outlined icon-light'}>logout</span>
+            <span className={theme.type === 'dark' ? 'icon-desc icon-desc-dark' : 'icon-desc icon-desc-light'}>logout</span>
             </div>
           </div>
         </div>

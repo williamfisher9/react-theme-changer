@@ -22,10 +22,17 @@
 }
 
 .icon {
-    color: #fff;
     font-size: 1.6rem;
     cursor: pointer;
     transition: scale 0.3s;
+}
+
+.icon-light {
+    color: #000;
+}
+
+.icon-dark {
+    color: #fff;
 }
 
 .icon:hover {

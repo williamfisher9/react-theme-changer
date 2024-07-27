@@ -14,10 +14,10 @@ function SocialMenu() {
 
     return <div className='social-menu-container' style={{backgroundColor:  theme.type === 'dark' ? theme.dark.menuColor : theme.light.menuColor}}>
         <div className='social-menu'>
-        <i className={theme.type === 'dark' ? "icon fa-regular fa-sun" : "icon fa-regular fa-moon"} onClick={handleThemeChanger} ></i>
-        <i className="icon fa-brands fa-square-facebook"></i>
-        <i className="icon fa-brands fa-x-twitter"></i>
-        <i className="icon fa-brands fa-instagram"></i>
+        <i className={theme.type === 'dark' ? "icon icon-dark fa-regular fa-sun" : "icon icon-light fa-regular fa-moon"} onClick={handleThemeChanger} ></i>
+        <i className={theme.type === 'dark' ? "icon icon-dark fa-brands fa-square-facebook" : "icon icon-light fa-brands fa-square-facebook"}></i>
+        <i className={theme.type === 'dark' ? "icon icon-dark fa-brands fa-x-twitter" : "icon icon-light fa-brands fa-x-twitter"}></i>
+        <i className={theme.type === 'dark' ? "icon icon-dark fa-brands fa-instagram" : "icon icon-light fa-brands fa-instagram"}></i>
         </div>
     </div>
 
