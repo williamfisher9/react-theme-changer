@@ -4,7 +4,6 @@
     left: 0;
     width: 75px;
     height: 100%;
-    
     backdrop-filter: blur(17px);
     transition: width 0.3s;
 }
@@ -62,7 +61,7 @@
     padding-top: 10px;
 }
 
-.top-submenu {
+.submenu {
     width: 100%;
     display: flex;
     align-items: center;
@@ -70,14 +69,14 @@
     flex-direction: column;
 }
 
-.icon {
-    font-size: 2rem;
+.main-menu-icon {
+    font-size: 1.6rem;
     font-weight: 300;
 }
 
 .icon-desc {
     font-size: 1.3rem;
-    font-weight: 200;
+    font-weight: 300;
     text-transform: uppercase;
     display: none;
 }
@@ -90,19 +89,10 @@
     color: #fff;
 }
 
-.bottom-submenu {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .icon-container {
     cursor: pointer;
     width: 100%;
     padding: 10px 0;
-    gap: 3px;
     overflow: hidden;
 }
 
@@ -113,7 +103,6 @@
     transition: 0.3s;
     cursor: pointer;
     width: 100%;
-    gap: 3px;
     overflow: hidden;
 }
 
@@ -122,15 +111,17 @@
     background-color: rgba(0, 0, 0, 0.5);
 
     .inner-icon-container {
-        scale: 1.1;
+        scale: 1;
     }
-    .icon {
-        
+
+    .main-menu-icon {
         color: yellow;
+        font-weight: 400;
     }
 
     .icon-desc {
         color: yellow;
+        font-weight: 400;
     }
 }
 
